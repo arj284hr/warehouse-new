@@ -1,0 +1,20 @@
+[18-Aug-2021 21:34:44 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home4/tap4trip/public_html/warehouse/app/InOutLoad.php:8
+Stack trace:
+#0 {main}
+  thrown in /home4/tap4trip/public_html/warehouse/app/InOutLoad.php on line 8
+[18-Aug-2021 21:36:13 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home4/tap4trip/public_html/warehouse/app/WareHouse.php:7
+Stack trace:
+#0 {main}
+  thrown in /home4/tap4trip/public_html/warehouse/app/WareHouse.php on line 7
+[18-Aug-2021 21:39:43 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home4/tap4trip/public_html/warehouse/app/Department.php:7
+Stack trace:
+#0 {main}
+  thrown in /home4/tap4trip/public_html/warehouse/app/Department.php on line 7
+[18-Aug-2021 21:39:44 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home4/tap4trip/public_html/warehouse/app/Pay.php:9
+Stack trace:
+#0 {main}
+  thrown in /home4/tap4trip/public_html/warehouse/app/Pay.php on line 9
+[18-Aug-2021 21:40:04 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home4/tap4trip/public_html/warehouse/app/Attendence.php:7
+Stack trace:
+#0 {main}
+  thrown in /home4/tap4trip/public_html/warehouse/app/Attendence.php on line 7
