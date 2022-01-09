@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="VcsDirectoryMappings">
-    <mapping directory="$PROJECT_DIR$/resources/views/layouts/admin" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/resources/views/layouts/employee" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/resources/views/layouts/manager" vcs="Git" />
-  </component>
-</project>

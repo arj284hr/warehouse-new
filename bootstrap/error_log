@@ -1,4 +1,0 @@
-[18-Aug-2021 21:44:50 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Application' not found in /home4/tap4trip/public_html/warehouse/bootstrap/app.php:14
-Stack trace:
-#0 {main}
-  thrown in /home4/tap4trip/public_html/warehouse/bootstrap/app.php on line 14

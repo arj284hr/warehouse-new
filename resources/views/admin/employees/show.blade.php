@@ -3,7 +3,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-10 text-center">
-                <h4>View Employee</h4>
+                <h4>View Associate</h4>
                 @if(session()->has('message'))
                     <div class="alert alert-success text-center">
                         {{ session()->get('message') }}
@@ -22,7 +22,7 @@
         <br>
         <div class="row">
             <div class="col-md-12">
-                <h4>Employee Details</h4>
+                <h4>Associate Details</h4>
                 <table class="table table-sm table-hover">
                     <tbody>
                         <tr>

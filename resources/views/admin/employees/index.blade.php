@@ -3,7 +3,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-10 text-center">
-                <h4>Employees</h4>
+                <h4>Associate</h4>
                 @if(session()->has('message'))
                     <div class="alert alert-success text-center">
                         {{ session()->get('message') }}

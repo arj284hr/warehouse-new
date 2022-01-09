@@ -1,8 +1,14 @@
 @extends('layouts.manager.app')
 @section('content')
     <?php
-    $xyz = $inOutLoad->id;
+    if (!empty($inOutLoad)) {
+      $xyz = $inOutLoad->id;
     $xyz++ ;
+    }
+
+    else{
+      $xyz=1;
+    }
     ?>
 <div class="container-fluid">
   <div class="row">

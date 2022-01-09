@@ -3,7 +3,7 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-10 text-center">
-      <h4>Update Employee Details</h4>
+      <h4>Update Associate Details</h4>
       @if(session()->has('message'))
       <div class="alert alert-success text-center">
         {{ session()->get('message') }}
@@ -155,7 +155,7 @@
       <div class="form-group row">
         <label for="" class="col-sm-4 col-form-label"></label>
         <div class="col-md-12">
-          <input type="submit" name = "submit" class = "btn btn-sm btn-primary form-control" value = "Update Employee">
+          <input type="submit" name = "submit" class = "btn btn-sm btn-primary form-control" value = "Update Associate">
         </div>
       </div>
 

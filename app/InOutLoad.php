@@ -35,7 +35,7 @@ class InOutLoad extends Model
 
     public function driver()
     {
-        return $this->belongsto('App\User', 'driver_id', 'id');
+        return $this->belongsto('App\User', 'driver_id', 'driver_name');
     }
 
     public static function getCustomer(){

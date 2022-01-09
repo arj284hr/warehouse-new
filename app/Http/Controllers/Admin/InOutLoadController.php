@@ -107,7 +107,8 @@ class InOutLoadController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    {
+    { 
+        
         try
         {
             //return $request->all();
@@ -176,7 +177,7 @@ class InOutLoadController extends Controller
 
             }
             if($request->has('driver_id')){
-                $load->driver_id = $request->driver_id;
+                $load->driver_name = $request->driver_id;
 
             }
             if($request->has('shift')){
@@ -303,6 +304,13 @@ class InOutLoadController extends Controller
                 // $load->pay_system = $request->paycheck;
                 // }
 
+                if($request->has('charge_amounts')){
+                    $load->charge_amount1 = $request->charge_amounts;
+                }
+                if($request->has('notes')){
+                    $load->notes = $request->notes;
+                }
+
                 if($request->has('charge_amount')){
                     $load->charge_amount = $request->charge_amount;
                 }
@@ -334,6 +342,8 @@ class InOutLoadController extends Controller
 
             $load->save();
             // return $load;
+
+            
 
 
             if($request->paycheck == 'hourly')

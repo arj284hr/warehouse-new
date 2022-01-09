@@ -19,7 +19,7 @@ class ManagerController extends Controller
     public function index()
     {
         $managers = User::where('email', '!=', 'admin@admin.com')
-        ->orwhere('type', '1')
+        ->where('type', '1')
         ->paginate(100);
         // ->orderBy('created_at', 'desc')
         return view('admin.managers.index', compact('managers'));

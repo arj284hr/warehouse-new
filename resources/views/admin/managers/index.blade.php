@@ -61,7 +61,18 @@
                                     <td>{{ $manager->last_name }}</td>
                                     <td>{{ $manager->email }}</td>
                                     <td>{{ ucfirst($manager->job_title) }}</td>
-                                    <td>{{ $manager->manager->customer_name }}</td>
+                                     <td>
+                <?php
+                    if(!empty($manager->manager->customer_name))
+                    {
+                     echo  $manager->manager->customer_name;
+                    }else{
+                     echo $manager->driver_name; 
+                    }
+                    ?>
+               
+                </td>
+
                                    {{--  <td><img src="{{ asset($category->category_image) }}" alt="Product Image" style = "width: 60px; height: 40px;"></td>
                                     <td>{{ substr($category->category_description,0,25) }}</td> --}}
                                     <td>

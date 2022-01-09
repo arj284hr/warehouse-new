@@ -84,7 +84,8 @@
             <a href="{{ route('admin.dashboard') }}" class="nav__logo border-bottom text-decoration-none text-dark">
                 {{-- <img src="#" class="img-fluid" alt="logo" > --}}
                 <i class="fas fa-warehouse"></i>
-                <span class="nav__logo-name">Exe Data Center</span>
+                <span class="nav__logo-name"><img 
+                              src="{{asset('/assets/img/EXE_logistics_Solutions_w_tagline1.jpg')}}" alt="User" class="main-dashboard-logo" width="130px" ></span>
             </a>
 
             <div class="nav__list">
@@ -116,7 +117,7 @@
                  <li class="nav-item">
                     <a class="nav-link text-truncate nav__link" href="{{ route('admin.employee.index') }}">
                         <i class="fas fa-user-tie"></i>
-                        <span class="d-none d-sm-inline nav__name">Employees</span>
+                        <span class="d-none d-sm-inline nav__name">Associate</span>
                     </a>
                 </li>
                  <li class="nav-item">

@@ -66,7 +66,17 @@
             <tr>
                 <td>{{$load->id}}</td>
                 <td>{{$load->date}}</td>
-                <td>{{$load->customer->customer_name}}</td>
+                <td>
+                <?php
+                    if(!empty($load->customer->customer_name))
+                    {
+                     echo  $load->customer->customer_name;
+                    }else{
+                     echo $load->driver_name; 
+                    }
+                    ?>
+               
+                </td>
                 <td>{{$load->load_project_date}}</td>
                 <td>{{$load->location}}</td>
                 <td>{{$load->load_project_type}}</td>

@@ -25,6 +25,7 @@ class CreateInOutLoadsTable extends Migration
             $table->foreign('department_id')->references('id')->on('departments')->onDelete('cascade');
             $table->unsignedBigInteger('driver_id')->nullable();
             $table->foreign('driver_id')->references('id')->on('users')->onDelete('cascade');
+            $table->string('driver_name', 100)->nullable();
             $table->timestamp('date')->nullable();
             $table->timestamp('load_project_date')->nullable();
             $table->string('load_project_type')->nullable();
@@ -68,6 +69,8 @@ class CreateInOutLoadsTable extends Migration
             $table->string('bad_pallet_charge')->nullable();
             $table->string('reload_charge')->nullable();
             $table->string('special_charges')->nullable();
+            $table->string('charge_amount1')->nullable();
+            $table->string('notes')->nullable();
             $table->string('charge_amount')->nullable();
             $table->string('rebate_percentage')->nullable();
             $table->string('total_income_less_rebate')->nullable();

@@ -31,7 +31,7 @@
 
  <header class="header body-pd" id="header">
         <div class="header__toggle d-flex align-items-center">
-            <i class='bx bx-menu' id="header-toggle"></i>
+            <i class='bx bx-menu bx-x' id="header-toggle"></i>
             <span class="pl-4 for-hide-dash">Dashboard</span>
         </div>
 

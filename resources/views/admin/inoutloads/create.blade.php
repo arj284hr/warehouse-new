@@ -147,12 +147,13 @@
         </div>--}}
          <div class="form-group col-md-2">
           <label for="">Driver Name</label>
-          <select name="driver_id" class ="form-control">
+          <input type="text" name="driver_id" class="form-control"  placeholder="Enter Drivername">
+         <!--  <select name="driver_id" class ="form-control">
            <option value="">Select Driver</option>
            @foreach($drivers as $driver)
            <option value="{{ $driver->id }}">{{ $driver->first_name.' '.$driver->last_name }}</option>
            @endforeach
-         </select>
+         </select> -->
         </div>
         <div class="form-group col-md-2">
               <label for="">Carrier</label>
@@ -379,6 +380,23 @@
 
        </div>
 
+       <div class="form-row">
+
+        <div class="form-group col-md-3">
+            <label for="">Charge</label>
+            <input type="text" class="form-control" id="txtFirst" placeholder="Charged Amount" name="charge_amounts">
+        </div>
+        <div class="form-group col-md-3">
+             <label style="font-size: 16px;"><input type="checkbox" id="no_charge_load" class="check" name="no_charge_load" value="hourly"><b> No Charge Load</b></label>
+        </div>
+        <div class="form-group col-md-6">
+            <label for="">Notes</label>
+            <input type="textarea" class="form-control"  placeholder="Notes" name="notes">
+        </div>
+       
+
+       </div>
+
 
 
   <div class="form-row">
@@ -391,7 +409,7 @@
     </div>
   </div>
 
-  <div class="changefields" style="display: none">
+  <div class="changefields">
 
     <div class="form-row">
 
@@ -565,7 +583,7 @@
 
   </div>
 
-   <div class="form-row showfields" style="display: none">
+   <div class="form-row showfields">
 
     {{-- <div class="form-row">
 
@@ -785,6 +803,50 @@
     //         }
     //     });
     // });
+
+    $(document).ready(function() {
+       
+
+    if (!$("#no_charge_load").is(":checked")) {
+    // do something if the checkbox is NOT checked
+
+    $('#txtFirst').keyup(function(e) {
+        var txtVal = $(this).val();
+        $('#charge').val(txtVal);
+        $('#charge').prop('readonly', true);
+    });
+    
+    // $('#charge').keyup(function(e) {
+    //     var txtVal = $(this).val();
+    //     $('#txtFirst').val(txtVal);
+    // });
+   }else{
+      $('#charge').val('');
+      $('#charge').prop('readonly', false);
+   }
+  
+});
+
+      $("#no_charge_load").on("change", function() {
+
+        var t1 = document.getElementById('txtFirst');
+        var tl1 = document.getElementById('charge');
+        var cb1 = document.getElementById('no_charge_load');
+     if (cb1.checked) {
+         tl1.value = '';
+         $('#charge').prop('readonly', false);
+       
+        
+     }else{
+         
+        tl1.value = t1.value;
+        $('#charge').prop('readonly', true);
+
+     }
+           
+        });
+
+
 
       $(document).ready(function(){
         $('#hourlyPay').click(function(){
@@ -1342,3 +1404,5 @@ $(document).ready(function(){
 </script>
 
 @endsection
+
+
